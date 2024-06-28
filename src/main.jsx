@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Home from './Pages/Home'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/SalenasBlog/">
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Route path="/" element={<Home/>}></Route>
     <App />
   </BrowserRouter>,
