@@ -12,8 +12,12 @@ function PoemsPage() {
 }, []);
   return (
     <div className='w-full bg-black text-white min-h-screen'>
-        <Header/>
+      <div className='header'>
+        <Header />
+      </div>
+        <div className='fade-in'>
         <Poems></Poems>
+        </div>
         <Footer></Footer>
     </div>
   )
