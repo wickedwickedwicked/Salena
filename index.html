@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salena Chaudhry</title>
     <script type="text/javascript">
-      if (window.location.search.includes('redirect=')) {
-        const redirectTo = window.location.search.split('redirect=')[1];
-        window.history.replaceState({}, '', redirectTo);
+      if (window.location.pathname !== '/' && !window.location.pathname.includes('index.html')) {
+        window.history.replaceState({}, '', '/');
       }
     </script>
   </head>
