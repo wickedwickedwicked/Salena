@@ -1,14 +1,19 @@
-
-
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
 
 function About() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
-}, []);
+  }, []);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <div className='w-full bg-black text-white min-h-screen'>
       <Header />
@@ -21,14 +26,17 @@ function About() {
               As a first-generation Pakistani American and first-generation college student, I am proud to have graduated with a Bachelor of Arts in Public Policy and a minor in International Development and Conflict Management. My policy interests are centered around women's rights, immigration, and human rights, and I am passionate about advocating for these issues. In my free time, I enjoy writing, reading, traveling, and spending quality time with my loved ones. I am always looking for new opportunities to learn and grow, and am excited about future possibilities.
             </p>
           </div>
-          <img src={AboutPic} className='w-full sm:w-auto max-w-3xl mb-8 sm:mb-0 ml-0 sm:ml-12' alt="Picture" />
+          <img
+            src={AboutPic}
+            className={`w-full sm:w-auto max-w-3xl mb-8 sm:mb-0 ml-0 sm:ml-12 smooth-image ${imageLoaded ? 'loaded' : ''}`}
+            alt="Picture"
+            onLoad={handleImageLoad}
+          />
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
 
 export default About;
-
-
