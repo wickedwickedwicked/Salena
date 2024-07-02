@@ -33,7 +33,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/blog/a-hrefhttpssalenachaudhrywordpresscom20210831the-pandemic-has-affected-the-way-we-socializethe-pandemic-has-affected-the-way-we-socializea" element={<PandemicSocialize />} />
       <Route path="/poems/composure" element={<ComposurePoem />} />
       <Route path="/poems/beauty" element={<BeautyPoem />} />
-      <Route component={NotFound} />
     </Routes>
   </BrowserRouter>
 );
