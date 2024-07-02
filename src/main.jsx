@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 import Home from './Pages/Home';
@@ -18,7 +18,7 @@ import ComposurePoem from './Pages/ComposurePoem';
 import BeautyPoem from './Pages/BeautyPoem';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -34,5 +34,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/poems/composure" element={<ComposurePoem />} />
       <Route path="/poems/beauty" element={<BeautyPoem />} />
     </Routes>
-  </HashRouter>
+  </BrowserRouter>
 );
