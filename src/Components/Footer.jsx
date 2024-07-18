@@ -42,7 +42,7 @@ function Footer() {
       </a>
      
 
-      <a href="https://www.linkedin.com/in/salena-c" target="_blank" rel="noopener noreferrer" style={buttonStyle}>
+      <a href="https://www.linkedin.com/in/salena-chaudhry/" target="_blank" rel="noopener noreferrer" style={buttonStyle}>
       <button style={buttonStyle}>
       <FaLinkedin />
       </button>
