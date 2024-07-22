@@ -89,6 +89,20 @@
   z-index: 10; 
 }
 
+.bullet-point {
+  position: relative;
+  padding-left: 2em; /* Increased indent */
+  text-indent: -1.5em; /* Should remain the same value as before */
+}
+
+.bullet-point .bullet {
+  position: absolute;
+  left: 0;
+}
+
+.bold-text {
+  font-weight: bold;
+}
 
 
 

@@ -16,6 +16,7 @@ import PostGrad from './Pages/PostGrad';
 import PandemicSocialize from './Pages/PandemicSocialize';
 import ComposurePoem from './Pages/ComposurePoem';
 import BeautyPoem from './Pages/BeautyPoem';
+import OceanCity from './Pages/OceanCity.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HashRouter>
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path="/blog/a-hrefhttpssalenachaudhrywordpresscom20210831the-pandemic-has-affected-the-way-we-socializethe-pandemic-has-affected-the-way-we-socializea" element={<PandemicSocialize />} />
       <Route path="/poems/composure" element={<ComposurePoem />} />
       <Route path="/poems/beauty" element={<BeautyPoem />} />
+      <Route path="/blog/ocean-city" element={<OceanCity/>}></Route>
     </Routes>
   </HashRouter>
 );

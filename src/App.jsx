@@ -16,6 +16,7 @@ import PostGrad from './Pages/PostGrad'
 import PandemicSocialize from './Pages/PandemicSocialize'
 import ComposurePoem from './Pages/ComposurePoem'
 import BeautyPoem from './Pages/BeautyPoem'
+import OceanCity from './Pages/OceanCity'
 
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
       <Route path="/blog/a-hrefhttpssalenachaudhrywordpresscom20210831the-pandemic-has-affected-the-way-we-socializethe-pandemic-has-affected-the-way-we-socializea" element={<PandemicSocialize/>}></Route>
       <Route path="/poems/composure" element={<ComposurePoem/>}></Route>
       <Route path="/poems/beauty" element={<BeautyPoem/>}></Route>
+      <Route path="/blog/ocean-city" element={<OceanCity/>}></Route>
+
       
       
      

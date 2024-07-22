@@ -5,6 +5,7 @@ import myImage from '../assets/LemonTreesPicture.png';
 import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
+import { MdArrowBackIosNew } from "react-icons/md";
 
 function ReviewOfAsLong() {
   useEffect(() => {
@@ -79,10 +80,22 @@ function ReviewOfAsLong() {
         </div>
       </div>
       
-      <li className="flex items-center justify-end mt-40 mb-20">
-     <Link to="/blog/navigating-istanbul" className="flex items-center text-4xl eb-garamond-normal custom-bronze mr-0 sm:mr-20 hover:text-current">Navigating Istanbul<MdArrowForwardIos className="ml-2 text-custom-bronze" /></Link></li>
 
-      
+
+     <div className="mt-40 mb-20 flex justify-between">
+                  {/* Left link */}
+                  <Link to="/blog/ocean-city" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                      <MdArrowBackIosNew className="ml-10 mr-2 text-custom-bronze" />
+                      <span className="hidden sm:inline">Ocean City</span>
+                  </Link>
+
+                  {/* Right link */}
+                  <Link to="/blog/navigating-istanbul" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                      <span className="hidden sm:inline">Navigating Istanbul</span>
+                      <MdArrowForwardIos className="mr-10 ml-2 text-custom-bronze" />
+                  </Link>
+              </div>
+
 
       <Footer></Footer>
 
