@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
-import ReactGA from 'react-ga';
-
-ReactGA.initialize('G-L199GYGVZ2');
+ReactGA.pageview(window.location.pathname);
 
 
 function About() {
@@ -13,11 +11,9 @@ function About() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 
-    // Set the page title
-    document.title = 'About - Salena Chaudhry';
 
     // Track page view with custom title and path
-    ReactGA.pageview('/about', { title: 'About - Salena Chaudhry' });
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   const handleImageLoad = () => {
@@ -42,7 +38,7 @@ function About() {
             alt="Picture"
             onLoad={handleImageLoad}
           />
-        </div>
+        </div> 
       </div>
       <Footer />
     </div>

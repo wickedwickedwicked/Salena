@@ -17,7 +17,9 @@ import PandemicSocialize from './Pages/PandemicSocialize'
 import ComposurePoem from './Pages/ComposurePoem'
 import BeautyPoem from './Pages/BeautyPoem'
 import OceanCity from './Pages/OceanCity'
+import ReactGA from 'react-ga';
 
+ReactGA.initialize('G-L199GYGVZ2');
 
 function App() {
   const [count, setCount] = useState(0)

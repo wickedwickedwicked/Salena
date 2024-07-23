@@ -6,6 +6,8 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
+import ReactGA from 'react-ga';
+
 
 const lines1 = [
     "Your beauty tempts my soul",
@@ -36,6 +38,7 @@ const lines4 = [
 function BeautyPoem() {
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
+        ReactGA.pageview(window.location.pathname);
     }, []);
     return (
         <div className='w-full bg-black text-white min-h-screen'>
