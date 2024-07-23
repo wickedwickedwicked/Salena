@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
-ReactGA.pageview(window.location.pathname);
+import ReactGA from 'react-ga';
 
 
 function About() {
