@@ -4,7 +4,7 @@ import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
 import ReactGA from 'react-ga';
 
-ReactGA.initialize('G-MP8JFW38XN');
+ReactGA.initialize('G-L199GYGVZ2');
 
 
 function About() {
