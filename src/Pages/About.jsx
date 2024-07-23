@@ -2,13 +2,19 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-MP8JFW38XN');
+
 
 function About() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
+    ReactGA.pageview(window.location.pathname + window.location.search); // Track page view
   }, []);
+
 
   const handleImageLoad = () => {
     setImageLoaded(true);
