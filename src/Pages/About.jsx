@@ -12,9 +12,13 @@ function About() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
-    ReactGA.pageview(window.location.pathname + window.location.search); // Track page view
-  }, []);
 
+    // Set the page title
+    document.title = 'About - Salena Chaudhry';
+
+    // Track page view with custom title and path
+    ReactGA.pageview('/about', { title: 'About - Salena Chaudhry' });
+  }, []);
 
   const handleImageLoad = () => {
     setImageLoaded(true);
