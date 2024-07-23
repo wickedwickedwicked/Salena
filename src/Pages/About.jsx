@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
-import ReactGA from 'react-ga';
+
 
 
 function About() {
@@ -10,10 +10,6 @@ function About() {
 
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
-
-
-    // Track page view with custom title and path
-    ReactGA.pageview(window.location.pathname);
   }, []);
 
   const handleImageLoad = () => {
