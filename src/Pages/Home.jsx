@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Blogs from '../Components/Blogs'
+import ReactGA from 'react-ga';
 
 
 
