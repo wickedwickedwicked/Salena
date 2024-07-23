@@ -21,7 +21,7 @@ function OceanCity() {
           <div className="flex justify-center mr-10 ml-10">
             <div className="space-y-4 mt-10 ">
               <p className="flex justify-center text-xl text-white mb-2 mt-40">July 21</p>
-              <p className="text-center flex justify-center text-6xl eb-garamond-normal custom-bronze mb-2">Ocean City</p>
+              <p className="text-center flex justify-center text-6xl eb-garamond-normal custom-bronze mb-2">A Local's Guide to Ocean City's Best Spots</p>
               
               <div className="max-w-[1200px] mx-auto "> {/* Adjust the max-width to match your image width */}
                 <img src={myImage} alt="" className="mx-auto w-auto h-auto" />

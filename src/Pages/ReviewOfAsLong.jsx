@@ -86,7 +86,7 @@ function ReviewOfAsLong() {
                   {/* Left link */}
                   <Link to="/blog/ocean-city" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
                       <MdArrowBackIosNew className="ml-10 mr-2 text-custom-bronze" />
-                      <span className="hidden sm:inline">Ocean City</span>
+                      <span className="hidden sm:inline">A Local's Guide to Ocean City's Best Spots</span>
                   </Link>
 
                   {/* Right link */}
