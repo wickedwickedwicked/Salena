@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const blogs = [
+  { name: "Palestine", date: "8/7/24", link: "/blog/palestine" },
   { name: "A Local's Guide to Ocean City's Best Spots", date: "7/21/24", link: "/blog/ocean-city" },
   { name: "Review of As Long as the Lemon Trees Grow", date: "2/13/24", link: "/blog/review-of-as-long-as-the-lemon-trees-grow" },
   { name: "Navigating Istanbul", date: "8/9/23", link: "/blog/navigating-istanbul" },

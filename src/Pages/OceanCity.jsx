@@ -116,10 +116,21 @@ boardwalk.   </p>
             </div>
           </div>
 
-              <li className="flex items-center justify-end mt-40 mb-20">
-                  <Link to="/blog/review-of-as-long-as-the-lemon-trees-grow" className="flex items-center text-4xl eb-garamond-normal custom-bronze mr-0 sm:mr-20 hover:text-current">Review of As Long as the Lemon Trees Grow
+             
 
-                      <MdArrowForwardIos className="ml-2 text-custom-bronze" /></Link></li>
+        <div className="mt-40 mb-20 flex justify-between">
+                  {/* Left link */}
+                  <Link to="/blog/palestine" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                      <MdArrowBackIosNew className="ml-10 mr-2 text-custom-bronze" />
+                      <span className="hidden sm:inline">Palestine</span>
+                  </Link>
+
+                  {/* Right link */}
+                  <Link to="/blog/review-of-as-long-as-the-lemon-trees-grow" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                      <span className="hidden sm:inline">Review of As Long as the Lemon Trees Grow</span>
+                      <MdArrowForwardIos className="mr-10 ml-2 text-custom-bronze" />
+                  </Link>
+      </div>
 
               
     

@@ -94,7 +94,7 @@ function ReviewOfAsLong() {
                       <span className="hidden sm:inline">Navigating Istanbul</span>
                       <MdArrowForwardIos className="mr-10 ml-2 text-custom-bronze" />
                   </Link>
-              </div>
+      </div>
 
 
       <Footer></Footer>
