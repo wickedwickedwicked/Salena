@@ -5,11 +5,34 @@ import Footer from '../Components/Footer';
 
 
 
+
 function About() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to the top when component mounts
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+
+    // Create and add Google Tag Manager script
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-L199GYGVZ2';
+    script.async = true;
+
+    // Append the script to the document head
+    document.head.appendChild(script);
+
+    // Initialize gtag function and config when the script loads
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { window.dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-L199GYGVZ2');
+    };
+
+    // Clean up the script from the document head when the component unmounts
+    return () => {
+      document.head.removeChild(script);
+    };
   }, []);
 
   const handleImageLoad = () => {
