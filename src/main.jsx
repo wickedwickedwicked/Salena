@@ -20,6 +20,8 @@ import OceanCity from './Pages/OceanCity.jsx';
 import ReactGA from 'react-ga';
 import Palestine from './Pages/Palestine.jsx';
 
+ReactGA.initialize('G-L199GYGVZ2');
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HashRouter>

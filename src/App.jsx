@@ -18,8 +18,19 @@ import OceanCity from './Pages/OceanCity';
 import Palestine from './Pages/Palestine';
 import './App.css';
 
+function usePageTracking() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname + location.search + location.hash;
+    ReactGA.pageview(path);
+  }, [location]);
+}
 
 function App() {
+  const [count, setCount] = useState(0);
+  usePageTracking();
+
   return (
     <Router>
       <Routes>
