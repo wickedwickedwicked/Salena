@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import ReactGA from 'react-ga';
 
 function Contact() {
   useEffect(() => {
