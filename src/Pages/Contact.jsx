@@ -9,8 +9,8 @@ function Contact() {
      ReactGA.pageview(window.location.pathname + window.location.search);
     
      // Optionally, you can also set the page title for better analytics
-     document.title = 'Home';
-     
+     document.title = 'Contact';
+
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 }, []);
   return (
