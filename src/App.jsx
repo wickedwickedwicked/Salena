@@ -18,6 +18,8 @@ import OceanCity from './Pages/OceanCity';
 import Palestine from './Pages/Palestine';
 import './App.css';
 
+ReactGA.initialize('G-L199GYGVZ2');
+
 function usePageTracking() {
   const location = useLocation();
 
@@ -28,11 +30,10 @@ function usePageTracking() {
 }
 
 function App() {
-  const [count, setCount] = useState(0);
   usePageTracking();
 
   return (
-    <Router>
+   
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -50,7 +51,7 @@ function App() {
         <Route path="/blog/ocean-city" element={<OceanCity />} />
         <Route path="/blog/palestine" element={<Palestine />} />
       </Routes>
-    </Router>
+   
   );
 }
 
