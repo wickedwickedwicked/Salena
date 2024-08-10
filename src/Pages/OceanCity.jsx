@@ -12,9 +12,6 @@ import ReactGA from 'react-ga';
 
 function OceanCity() {
     useEffect(() => {
-     // Track page view using ReactGA
-     document.title = 'Ocean City';
-     ReactGA.pageview(window.location.pathname + window.location.search);
      
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
