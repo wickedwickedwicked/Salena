@@ -14,7 +14,7 @@ function Home() {
     
     
     // Optionally, you can also set the page title for better analytics
-    document.title = 'Home';
+    document.title = 'Home2';
     
     // Scroll to the top when component mounts
     window.scrollTo(0, 0);
