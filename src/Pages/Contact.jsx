@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 function Contact() {
   useEffect(() => {
 
-
+    document.title = "Contact";
 
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 }, []);

@@ -8,6 +8,7 @@ import Poems from '../Components/Poems'
 
 function PoemsPage() {
   useEffect(() => {
+    document.title = "Poems Page";
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 }, []);
   return (

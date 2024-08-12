@@ -10,6 +10,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function NavigatingIstanbul() {
     useEffect(() => {
+      document.title = "Navigating Istanbul";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

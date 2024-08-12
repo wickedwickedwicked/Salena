@@ -8,6 +8,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function PostGrad() {
     useEffect(() => {
+      document.title = "Post-Graduation Anxiety";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

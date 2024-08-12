@@ -22,6 +22,7 @@ const lines = [
 
 function ComposurePoem() {
     useEffect(() => {
+      document.title = "Composure";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

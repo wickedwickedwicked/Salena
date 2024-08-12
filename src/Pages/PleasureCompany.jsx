@@ -8,6 +8,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function PleasureCompany() {
     useEffect(() => {
+      document.title = "The Pleasure of One’s Company";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

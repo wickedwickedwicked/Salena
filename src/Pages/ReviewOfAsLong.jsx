@@ -9,6 +9,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function ReviewOfAsLong() {
   useEffect(() => {
+    document.title = "Review of As Long as the Lemon Trees Grow";
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 }, []);
   return (

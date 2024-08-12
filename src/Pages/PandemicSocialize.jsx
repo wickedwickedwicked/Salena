@@ -8,6 +8,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function PandemicSocialize() {
     useEffect(() => {
+      document.title = "The Pandemic has Affected the Way We Socialize";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

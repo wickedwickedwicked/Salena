@@ -12,6 +12,7 @@ import ReactGA from 'react-ga';
 
 function OceanCity() {
     useEffect(() => {
+        document.title = "A Local's Guide to Ocean City's Best Spots";
      
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);

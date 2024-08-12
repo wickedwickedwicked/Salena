@@ -8,6 +8,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function WhatWillPeople() {
     useEffect(() => {
+      document.title = "What Will People Say?";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

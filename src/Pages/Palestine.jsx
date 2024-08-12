@@ -11,6 +11,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function Palestine() {
     useEffect(() => {
+      document.title = "Palestine";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
       return (

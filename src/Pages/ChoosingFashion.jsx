@@ -9,6 +9,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 
 function ChoosingFashion() {
     useEffect(() => {
+      document.title = "Choosing Sustainable Fashion";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

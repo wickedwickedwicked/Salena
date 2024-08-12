@@ -9,6 +9,7 @@ import ReactGA from 'react-ga';
 
 function Home() {
   useEffect(() => {
+    document.title = "Home";
     // Scroll to the top when component mounts
     window.scrollTo(0, 0);
   }, []);

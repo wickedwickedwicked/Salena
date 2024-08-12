@@ -36,6 +36,7 @@ const lines4 = [
 
 function BeautyPoem() {
     useEffect(() => {
+        document.title = "Beauty";
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (
