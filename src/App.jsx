@@ -18,7 +18,7 @@ import OceanCity from './Pages/OceanCity';
 import Palestine from './Pages/Palestine';
 import './App.css';
 
-// ReactGA.initialize('G-L199GYGVZ2');
+ReactGA.initialize('G-L199GYGVZ2');
 
 function App() {
   const location = useLocation();
