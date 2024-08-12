@@ -5,27 +5,13 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
-import ReactGA from 'react-ga';
 
 function PandemicSocialize() {
-    // useEffect(() => {
-    //   // document.title = "The Pandemic has Affected the Way We Socialize";
-    //   ReactGA.send({
-    //     hitType: 'pageview',
-    //     page: window.location.pathname + window.location.hash,
-    //     title: 'Test',
-    //   });
-    //     window.scrollTo(0, 0); // Scrolls to the top when component mounts
-    // }, []);
-
     useEffect(() => {
-      ReactGA.send({
-        hitType: "pageview",
-        page: "/my-path",
-        title: "Custom Title",
-      });
-    });
-    
+      window.location.reload();
+      document.title = "The Pandemic has Affected the Way We Socialize";
+      window.scrollTo(0, 0); // Scrolls to the top when component mounts
+    }, []);
     return (
         <div className='w-full bg-black text-white min-h-screen'>
     
