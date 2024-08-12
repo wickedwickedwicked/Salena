@@ -23,13 +23,13 @@ ReactGA.initialize('G-L199GYGVZ2');
 function App() {
   const location = useLocation();
 
-  // useEffect(() => {
-  //   ReactGA.send({
-  //     hitType: 'pageview',
-  //     page: location.pathname + location.hash,
-  //     title: document.title,
-  //   });
-  // }, [location]);
+  useEffect(() => {
+    ReactGA.send({
+      hitType: 'pageview',
+      page: location.pathname + location.hash,
+      title: document.title,
+    });
+  }, [location]);
 
   return (
     <Routes>
