@@ -19,9 +19,7 @@ import Palestine from './Pages/Palestine';
 import './App.css';
 
 
-
 function App() {
-
   const location = useLocation();
 
   useEffect(() => {

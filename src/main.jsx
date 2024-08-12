@@ -4,7 +4,10 @@ import { HashRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 
-ReactGA.initialize(	'G-L199GYGVZ2'); 
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize('G-L199GYGVZ2');
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <HashRouter>
