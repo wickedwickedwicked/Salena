@@ -23,31 +23,32 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.hash });
+    ReactGA.send({
+      hitType: 'pageview',
+      page: location.pathname + location.hash,
+      title: document.title,
+    });
   }, [location]);
 
   return (
-   
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/poems" element={<PoemsPage />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blog/review-of-as-long-as-the-lemon-trees-grow" element={<ReviewOfAsLong />} />
-        <Route path="/blog/navigating-istanbul" element={<NavigatingIstanbul />} />
-        <Route path="/blog/choosing-sustainable-fashion" element={<ChoosingFashion />} />
-        <Route path="/blog/what-will-people-say" element={<WhatWillPeople />} />
-        <Route path="/blog/pleasure-of-ones-company" element={<PleasureCompany />} />
-        <Route path="/blog/post-graduation-anxiety" element={<PostGrad />} />
-        <Route path="/blog/a-hrefhttpssalenachaudhrywordpresscom20210831the-pandemic-has-affected-the-way-we-socializethe-pandemic-has-affected-the-way-we-socializea" element={<PandemicSocialize />} />
-        <Route path="/poems/composure" element={<ComposurePoem />} />
-        <Route path="/poems/beauty" element={<BeautyPoem />} />
-        <Route path="/blog/ocean-city" element={<OceanCity />} />
-        <Route path="/blog/palestine" element={<Palestine />} />
-      </Routes>
-   
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/poems" element={<PoemsPage />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/blog/review-of-as-long-as-the-lemon-trees-grow" element={<ReviewOfAsLong />} />
+      <Route path="/blog/navigating-istanbul" element={<NavigatingIstanbul />} />
+      <Route path="/blog/choosing-sustainable-fashion" element={<ChoosingFashion />} />
+      <Route path="/blog/what-will-people-say" element={<WhatWillPeople />} />
+      <Route path="/blog/pleasure-of-ones-company" element={<PleasureCompany />} />
+      <Route path="/blog/post-graduation-anxiety" element={<PostGrad />} />
+      <Route path="/blog/a-hrefhttpssalenachaudhrywordpresscom20210831the-pandemic-has-affected-the-way-we-socializethe-pandemic-has-affected-the-way-we-socializea" element={<PandemicSocialize />} />
+      <Route path="/poems/composure" element={<ComposurePoem />} />
+      <Route path="/poems/beauty" element={<BeautyPoem />} />
+      <Route path="/blog/ocean-city" element={<OceanCity />} />
+      <Route path="/blog/palestine" element={<Palestine />} />
+    </Routes>
   );
 }
 
 export default App;
-
