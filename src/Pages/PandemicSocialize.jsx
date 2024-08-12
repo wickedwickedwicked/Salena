@@ -14,7 +14,7 @@ function PandemicSocialize() {
       ReactGA.send({
         hitType: "pageview",
         page: "/my-path",
-        title: document.title,
+        title: "Super Test",
       });
       window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
