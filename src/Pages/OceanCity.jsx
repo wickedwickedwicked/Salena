@@ -13,6 +13,12 @@ import ReactGA from 'react-ga';
 function OceanCity() {
     useEffect(() => {
         document.title = "A Local's Guide to Ocean City's Best Spots";
+        ReactGA.initialize('G-L199GYGVZ2');
+        ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: document.title,
+      });
      
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
