@@ -6,7 +6,7 @@ import './index.css';
 
 import ReactGA from 'react-ga4';
 
-// ReactGA.initialize('G-L199GYGVZ2');
+ReactGA.initialize('G-L199GYGVZ2');
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
