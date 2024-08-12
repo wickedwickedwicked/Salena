@@ -5,10 +5,16 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
+import ReactGA from "react-ga4";
 
 function PleasureCompany() {
     useEffect(() => {
-      document.title = "The Pleasure of One’s Company";
+      ReactGA.initialize('G-L199GYGVZ2');
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: "The Pleasure of One’s Company",
+      });
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (
