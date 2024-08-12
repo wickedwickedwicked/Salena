@@ -5,13 +5,25 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
+import ReactGA from "react-ga4";
+
+
 
 function PandemicSocialize() {
+    // useEffect(() => {
+    //   document.title = "The Pandemic has Affected the Way We Socialize";
+    //   window.scrollTo(0, 0); // Scrolls to the top when component mounts
+    // }, []);
+
     useEffect(() => {
-      window.location.reload();
-      document.title = "The Pandemic has Affected the Way We Socialize";
-      window.scrollTo(0, 0); // Scrolls to the top when component mounts
-    }, []);
+      ReactGA.initialize('G-L199GYGVZ2');
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: "Custom Title",
+      });
+    });
+
     return (
         <div className='w-full bg-black text-white min-h-screen'>
     
