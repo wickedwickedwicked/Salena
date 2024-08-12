@@ -18,19 +18,15 @@ import OceanCity from './Pages/OceanCity';
 import Palestine from './Pages/Palestine';
 import './App.css';
 
-// ReactGA.initialize('G-L199GYGVZ2');
 
-// function usePageTracking() {
-//   const location = useLocation();
-
-//   useEffect(() => {
-//     const path = location.pathname + location.search + location.hash;
-//     ReactGA.pageview(path);
-//   }, [location]);
-// }
 
 function App() {
-  // usePageTracking();
+
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: 'pageview', page: location.pathname + location.hash });
+  }, [location]);
 
   return (
    
