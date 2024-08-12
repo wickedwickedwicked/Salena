@@ -17,7 +17,7 @@ function OceanCity() {
         ReactGA.send({
         hitType: "pageview",
         page: "/my-path",
-        title: document.title,
+        title: "A Local's Guide to Ocean City's Best Spots",
       });
      
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
