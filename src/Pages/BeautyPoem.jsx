@@ -6,6 +6,7 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
+import ReactGA from "react-ga4";
 
 
 const lines1 = [
@@ -36,7 +37,12 @@ const lines4 = [
 
 function BeautyPoem() {
     useEffect(() => {
-        document.title = "Beauty";
+        ReactGA.initialize('G-L199GYGVZ2');
+        ReactGA.send({
+          hitType: "pageview",
+          page: "/my-path",
+          title: "Beauty",
+        });
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

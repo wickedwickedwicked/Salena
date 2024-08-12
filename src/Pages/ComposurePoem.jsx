@@ -5,6 +5,7 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
+import ReactGA from "react-ga4";
 
 const lines = [
     "Contentment that shines through beams of sunlight",
@@ -22,7 +23,12 @@ const lines = [
 
 function ComposurePoem() {
     useEffect(() => {
-      document.title = "Composure";
+      ReactGA.initialize('G-L199GYGVZ2');
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: "Composure",
+      });
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

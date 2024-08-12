@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Header from '../Components/Header';
 import AboutPic from './../assets/AboutPic.png';
 import Footer from '../Components/Footer';
+import ReactGA from "react-ga4";
 
 
 
@@ -10,7 +11,12 @@ function About() {
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    document.title = "About";
+    ReactGA.initialize('G-L199GYGVZ2');
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/my-path",
+      title: "About",
+    });
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
   }, []);
 
