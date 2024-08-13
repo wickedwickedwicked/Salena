@@ -9,12 +9,11 @@ import ReactGA from "react-ga4";
 
 function PandemicSocialize() {
     useEffect(() => {
-      document.title = "The Pandemic has Affected the Way We Socialize";
       ReactGA.initialize('G-L199GYGVZ2');
       ReactGA.send({
         hitType: "pageview",
         page: "/my-path",
-        title: "Super Test",
+        title: "The Pandemic has Affected the Way We Socialize",
       });
       window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);

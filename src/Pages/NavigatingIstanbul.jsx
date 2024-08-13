@@ -7,10 +7,16 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
+import ReactGA from "react-ga4";
 
 function NavigatingIstanbul() {
     useEffect(() => {
-      document.title = "Navigating Istanbul";
+      ReactGA.initialize('G-L199GYGVZ2');
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: "Navigating Istanbul",
+      });
         window.scrollTo(0, 0); // Scrolls to the top when component mounts
     }, []);
     return (

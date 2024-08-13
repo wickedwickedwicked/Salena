@@ -9,7 +9,12 @@ import ReactGA from 'react-ga';
 
 function Home() {
   useEffect(() => {
-    document.title = "Home";
+    ReactGA.initialize('G-L199GYGVZ2');
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/my-path",
+      title: "Home Page",
+    });
     // Scroll to the top when component mounts
     window.scrollTo(0, 0);
   }, []);

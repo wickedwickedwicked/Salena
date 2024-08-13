@@ -15,7 +15,7 @@ function About() {
     ReactGA.send({
       hitType: "pageview",
       page: "/my-path",
-      title: "About",
+      title: "About Page",
     });
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
   }, []);

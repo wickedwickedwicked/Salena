@@ -3,12 +3,17 @@ import React, { useEffect } from 'react';
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Poems from '../Components/Poems'
-
+import ReactGA from "react-ga4";
 
 
 function PoemsPage() {
   useEffect(() => {
-    document.title = "Poems Page";
+    ReactGA.initialize('G-L199GYGVZ2');
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: "Poems Page",
+      });
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 }, []);
   return (

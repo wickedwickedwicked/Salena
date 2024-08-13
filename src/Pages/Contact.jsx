@@ -7,7 +7,12 @@ import ReactGA from 'react-ga';
 function Contact() {
   useEffect(() => {
 
-    document.title = "Contact";
+    ReactGA.initialize('G-L199GYGVZ2');
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/my-path",
+        title: "Contact Page",
+      });
 
     window.scrollTo(0, 0); // Scrolls to the top when component mounts
 }, []);
