@@ -23,7 +23,7 @@ const lines = [
 
 function ComposurePoem() {
     useEffect(() => {
-      ReactGA.initialize('G-L199GYGVZ2');
+      
       ReactGA.send({
         hitType: "pageview",
         page: "/my-path",

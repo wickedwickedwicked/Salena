@@ -7,7 +7,7 @@ import ReactGA from 'react-ga4';
 function Contact() {
   useEffect(() => {
 
-    ReactGA.initialize('G-L199GYGVZ2');
+   
       ReactGA.send({
         hitType: "pageview",
         page: "/my-path",
