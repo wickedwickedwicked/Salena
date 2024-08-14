@@ -6,8 +6,7 @@ import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom'
 import { MdArrowForwardIos } from "react-icons/md"
 import { MdArrowBackIosNew } from "react-icons/md";
-
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 
 function OceanCity() {
