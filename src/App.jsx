@@ -16,20 +16,14 @@ import ComposurePoem from './Pages/ComposurePoem';
 import BeautyPoem from './Pages/BeautyPoem';
 import OceanCity from './Pages/OceanCity';
 import Palestine from './Pages/Palestine';
+import Skincare from './Pages/Skincare';
 import './App.css';
+
 
 ReactGA.initialize('G-L199GYGVZ2');
 
 function App() {
   const location = useLocation();
-
-  // useEffect(() => {
-  //   ReactGA.send({
-  //     hitType: 'pageview',
-  //     page: location.pathname + location.hash,
-  //     title: document.title,
-  //   });
-  // }, [location]);
 
   return (
     <Routes>
@@ -48,6 +42,7 @@ function App() {
       <Route path="/poems/beauty" element={<BeautyPoem />} />
       <Route path="/blog/ocean-city" element={<OceanCity />} />
       <Route path="/blog/palestine" element={<Palestine />} />
+      <Route path="/blog/skincare" element={<Skincare />} />
     </Routes>
   );
 }
