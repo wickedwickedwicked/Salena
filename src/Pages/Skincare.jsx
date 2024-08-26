@@ -116,17 +116,6 @@ function Skincare() {
                           <p className="text-start text-xl eb-garamond-normal mt-5 leading-relaxed">
                               This moisturizer is enriched with 92% snail mucin, providing deep nourishment and repair for
                               the skin. I enjoyed using the cream in the winter; it layers well with other skincare products.
-                              Given my dry skin, I preferred this cream over the COSRX Snail Mucin 96% Essence. The essence has a thinner formula, which might be better suited for normal to oily skin, while the all-
-                              in-one cream is more effective for dry skin in my experience.
-                          </p>
-
-                          <p className="text-start flex justify-start text-xl eb-garamond-bold mt-5 custom-bronze">
-                              Advanced Snail 92 All-in-One Cream
-                          </p>
-
-                          <p className="text-start text-xl eb-garamond-normal mt-5 leading-relaxed">
-                              This moisturizer is enriched with 92% snail mucin, providing deep nourishment and repair for
-                              the skin. I enjoyed using the cream in the winter; it layers well with other skincare products.
                               Given my dry skin, I preferred this cream over the COSRX Snail Mucin 96% Essence. The
 
                               essence has a thinner formula, which might be better suited for normal to oily skin, while the all-
