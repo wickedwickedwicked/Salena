@@ -15,7 +15,6 @@ import PandemicSocialize from './Pages/PandemicSocialize';
 import ComposurePoem from './Pages/ComposurePoem';
 import BeautyPoem from './Pages/BeautyPoem';
 import OceanCity from './Pages/OceanCity';
-import Palestine from './Pages/Palestine';
 import Skincare from './Pages/Skincare';
 import './App.css';
 
@@ -41,7 +40,6 @@ function App() {
       <Route path="/poems/composure" element={<ComposurePoem />} />
       <Route path="/poems/beauty" element={<BeautyPoem />} />
       <Route path="/blog/ocean-city" element={<OceanCity />} />
-      <Route path="/blog/palestine" element={<Palestine />} />
       <Route path="/blog/skincare" element={<Skincare />} />
     </Routes>
   );

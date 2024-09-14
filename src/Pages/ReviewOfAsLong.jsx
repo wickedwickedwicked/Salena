@@ -71,7 +71,7 @@ function ReviewOfAsLong() {
             </p>
 
             <p className="text-start flex justify-start text-xl eb-garamond-normal mt-5" leading-relaxed>
-            In conclusion, I highly recommend reading As Long as the Lemon Trees Grow. Not only will you find yourself unable to put the book down, you will end up falling in love with the characters. In addition, amid the ongoing genocide against the Palestinians, let us redouble our efforts to educate ourselves, advocate, donate, and continue to boycott companies that profit from the genocide of the Palestinians.  
+            In conclusion, I highly recommend reading As Long as the Lemon Trees Grow. Not only will you find yourself unable to put the book down, you will end up falling in love with the characters. 
             </p>
 
             <p className="text-start flex justify-start text-xl eb-garamond-normal mt-5" leading-relaxed>

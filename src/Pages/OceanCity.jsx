@@ -126,9 +126,9 @@ boardwalk.   </p>
 
         <div className="mt-40 mb-20 flex justify-between">
                   {/* Left link */}
-                  <Link to="/blog/palestine" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                  <Link to="/blog/skincare" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
                       <MdArrowBackIosNew className="ml-10 mr-2 text-custom-bronze" />
-                      <span className="hidden sm:inline">Palestine</span>
+                      <span className="hidden sm:inline">Favorite Skincare Products</span>
                   </Link>
 
                   {/* Right link */}

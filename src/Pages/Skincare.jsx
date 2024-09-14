@@ -183,7 +183,7 @@ function Skincare() {
           </div>
 
               <li className="flex items-center justify-end mt-40 mb-20">
-                  <Link to="/blog/palestine" className="flex items-center text-4xl eb-garamond-normal custom-bronze mr-0 sm:mr-20 hover:text-current">Palestine
+                  <Link to="/blog/ocean-city" className="flex items-center text-4xl eb-garamond-normal custom-bronze mr-0 sm:mr-20 hover:text-current">A Local's Guide to Ocean City's Best Spots
 
                       <MdArrowForwardIos className="ml-2 text-custom-bronze" /></Link></li>
 
