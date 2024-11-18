@@ -16,6 +16,7 @@ import ComposurePoem from './Pages/ComposurePoem';
 import BeautyPoem from './Pages/BeautyPoem';
 import OceanCity from './Pages/OceanCity';
 import Skincare from './Pages/Skincare';
+import NovBookRec from './Pages/NovBookRec';
 import './App.css';
 
 
@@ -41,6 +42,7 @@ function App() {
       <Route path="/poems/beauty" element={<BeautyPoem />} />
       <Route path="/blog/ocean-city" element={<OceanCity />} />
       <Route path="/blog/skincare" element={<Skincare />} />
+      <Route path="/blog/NovBookRec" element={<NovBookRec />} />
     </Routes>
   );
 }

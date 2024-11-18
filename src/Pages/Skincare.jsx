@@ -182,14 +182,25 @@ function Skincare() {
             </div>
           </div>
 
-              <li className="flex items-center justify-end mt-40 mb-20">
-                  <Link to="/blog/ocean-city" className="flex items-center text-4xl eb-garamond-normal custom-bronze mr-0 sm:mr-20 hover:text-current">A Local's Guide to Ocean City's Best Spots
 
-                      <MdArrowForwardIos className="ml-2 text-custom-bronze" /></Link></li>
+          <div className="mt-40 mb-20 flex justify-between">
+                  {/* Left link */}
+                  <Link to="/blog/NovBookRec" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                      <MdArrowBackIosNew className="ml-10 mr-2 text-custom-bronze" />
+                      <span className="hidden sm:inline">November Book Recommendations</span>
+                  </Link>
+
+                  {/* Right link */}
+                  <Link to="/blog/ocean-city" className="flex items-center text-4xl eb-garamond-normal custom-bronze hover:text-current">
+                      <span className="hidden sm:inline">A Local's Guide to Ocean City's Best Spots</span>
+                      <MdArrowForwardIos className="mr-10 ml-2 text-custom-bronze" />
+                  </Link>
+        </div>
+
+
+             
 
               
-    
-          
     
           <Footer></Footer>
     
