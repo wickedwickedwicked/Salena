@@ -23,9 +23,16 @@ function Blogs() {
         {blogs.map((blog, index) => (
           <div key={index} className={index === 0 ? "mt-40" : ""}>
             <p className="flex justify-center text-sm text-white mb-2 ">{blog.date}</p>
-            <li className='flex justify-center'>
-              <Link to={blog.link} className="text-center text-6xl eb-garamond-normal custom-bronze mb-2 no-underline hover:text-current">{blog.name}</Link>
+            
+            <li className="flex justify-center">
+              <Link
+                to={blog.link}
+                className="text-center text-4xl md:text-6xl eb-garamond-normal custom-bronze mb-2 no-underline hover:text-current"
+              >
+                {blog.name}
+              </Link>
             </li>
+
             <li className='flex justify-center mt-8 mb-60'>
               <Link to={blog.link} className="text-xl eb-garamond-normal custom-bronze no-underline hover:text-current">Read More</Link>
             </li>

@@ -11,28 +11,30 @@ import ReactGA from "react-ga4";
 
 function NovBookRec() {
     useEffect(() => {
-      ReactGA.send({
-        hitType: "pageview",
-        page: "/my-path",
-        title: "November Book Recommendations",
-      });
-         window.scrollTo(0, 0); // Scrolls to the top when component mounts
-    }, []);
-      return (
-        <div className='w-full bg-black text-white min-h-screen'>
-    
-          <Header />
-    
-          <div className="flex justify-center mr-10 ml-10">
-            <div className="space-y-4 mt-10 ">
-              <p className="flex justify-center text-xl text-white mb-2 mt-40">November 18</p>
-              <p className="text-center flex justify-center text-6xl eb-garamond-normal custom-bronze mb-2">November Book Recommendations</p>
-              
-              <div className="max-w-[1200px] mx-auto "> {/* Adjust the max-width to match your image width */}
-                <img src={myImage} alt="" className="mx-auto w-auto h-auto" />
+        ReactGA.send({
+          hitType: "pageview",
+          page: "/my-path",
+          title: "November Book Recommendations",
+        });
+          window.scrollTo(0, 0); // Scrolls to the top when component mounts
+      }, []);
+        return (
+          <div className='w-full bg-black text-white min-h-screen'>
+      
+            <Header />
+      
+            <div className="flex justify-center mr-10 ml-10">
+              <div className="space-y-4 mt-10 ">
+                <p className="flex justify-center text-xl text-white mb-2 mt-40">August 22</p>
+                        <p className="text-center flex justify-center text-4xl md:text-6xl eb-garamond-normal custom-bronze mb-2">
+                            November Book Recommendations
+                        </p>
 
                 
-
+                <div className="max-w-[1200px] mx-auto "> {/* Adjust the max-width to match your image width */}
+                  <img src={myImage} alt="" className="mx-auto w-auto h-auto" />
+  
+                  
                           <p className="text-start text-xl eb-garamond-normal mt-10 leading-relaxed ">
                             Reading a book has always been a source of enjoyment. When we immerse ourselves in a book,
                             we learn, grow, and escape from our everyday stressors. Yet, why do many of us gravitate
