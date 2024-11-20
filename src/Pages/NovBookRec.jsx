@@ -25,7 +25,7 @@ function NovBookRec() {
       
             <div className="flex justify-center mr-10 ml-10">
               <div className="space-y-4 mt-10 ">
-                <p className="flex justify-center text-xl text-white mb-2 mt-40">August 22</p>
+                <p className="flex justify-center text-xl text-white mb-2 mt-40">November 19</p>
                         <p className="text-center flex justify-center text-4xl md:text-6xl eb-garamond-normal custom-bronze mb-2">
                             November Book Recommendations
                         </p>
